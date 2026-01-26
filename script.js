@@ -26,3 +26,5 @@ const express = require('express');
 const app = express();
 const PORT = 300;
 
+// Middleware
+app.use(express.json());
