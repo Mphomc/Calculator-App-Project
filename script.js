@@ -21,7 +21,8 @@ function calculate(a, b, operation){
     }
 }
 
-console.log(calculate(7, 2, "add"));      // 9
-console.log(calculate(7, 2, "subtract")); // 5
-console.log(calculate(7, 2, "multiply")); // 14
-console.log(calculate(7, 2, "divide"));   // 3.5
+// Import expect
+const express = require('express');
+const app = express();
+const PORT = 300;
+
