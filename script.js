@@ -46,3 +46,8 @@ app.get('/calculate', (req, res) => {
 
 
 });
+
+// Start server
+app.listen(PORT, () =>{
+    console.log(`calculator running on http://localhost:${PORT}`);
+});
