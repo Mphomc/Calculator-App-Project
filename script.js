@@ -28,3 +28,21 @@ const PORT = 300;
 
 // Middleware
 app.use(express.json());
+
+// Calculator route (calculate)
+app.get('/calculate', (req, res) => {
+    const {a, b, operation} = req.query;
+
+    const numA = Number(a);
+    const numB = Number(b);
+
+    if (isNaN(numA) || isNan(numB)) {
+        return res.send("Please provide valid numbers");
+        
+    }
+
+    const result = calculate(numA, numB, operation);
+    res.send(`Result: ${result}`);
+
+
+});
