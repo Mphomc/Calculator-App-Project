@@ -28,6 +28,7 @@ const PORT = 300;
 
 // Middleware
 app.use(express.json());
+app.use(express.static("public"));
 
 // Root route
 app.get("/", (req, res) =>{
