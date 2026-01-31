@@ -29,8 +29,13 @@ const PORT = 300;
 // Middleware
 app.use(express.json());
 
+// Root route
+app.get("/", (req, res) =>{
+    res.send("calculator is running")
+});
+
 // Calculator route (calculate)
-app.get('/calculate', (req, res) => {
+app.get("/calculate", (req, res) => {
     const {a, b, operation} = req.query;
 
     const numA = Number(a);
